@@ -1,0 +1,17 @@
+
+{
+    "artistName": "Todd Phillips",
+    "id": "323818693",
+    "releaseDate": "2009-06-05",
+    "name": "The Hangover",
+    "kind": "movie",
+    "copyright": "© This motion picture: 2009 IFP Westcoast Erste GmbH \u0026 Co. KG. Story and Screenplay: 2009 Warner Bros. Entertainment Inc. and Legendary Pictures. Original Score: 2009 Warner-Hollywood Music, LLC.",
+    "contentAdvisoryRating": "Explicit",
+    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Video60/v4/b3/1b/fd/b31bfd4a-9ef4-86cf-ec63-148c75394cb6/pr_source.lsr/200x200bb.png",
+    "genres": [{
+               "genreId": "4404",
+               "name": "Comedy",
+               "url": "https://itunes.apple.com/us/genre/id4404"
+               }],
+    "url": "https://itunes.apple.com/us/movie/the-hangover/id323818693"
+}

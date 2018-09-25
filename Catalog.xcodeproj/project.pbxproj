@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78F889BD19E7E44A65EFD7D7 /* Pods_CatalogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB295896BFB5FFB104978017 /* Pods_CatalogTests.framework */; };
+		BE5E94435711F66D4A03CFD5 /* Pods_Catalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B5BDB2015A38A0AD3F30EC /* Pods_Catalog.framework */; };
+		EF70D20A21580B0800B52944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D20921580B0800B52944 /* AppDelegate.swift */; };
+		EF70D20F21580B0800B52944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF70D20D21580B0800B52944 /* Main.storyboard */; };
+		EF70D21121580B0A00B52944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF70D21021580B0A00B52944 /* Assets.xcassets */; };
+		EF70D21421580B0A00B52944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF70D21221580B0A00B52944 /* LaunchScreen.storyboard */; };
+		EF70D231215823A800B52944 /* CatalogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D230215823A800B52944 /* CatalogAPI.swift */; };
+		EF70D2332158252C00B52944 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2322158252C00B52944 /* Media.swift */; };
+		EF70D2392158286500B52944 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2382158286500B52944 /* TabCoordinator.swift */; };
+		EF70D23B2158288400B52944 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D23A2158288400B52944 /* AppCoordinator.swift */; };
+		EF70D23D215828C300B52944 /* MusicTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D23C215828C300B52944 /* MusicTabCoordinator.swift */; };
+		EF70D23F215828D900B52944 /* Storyboard+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D23E215828D900B52944 /* Storyboard+ext.swift */; };
+		EF70D241215828F900B52944 /* UIActivityIndicator+rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D240215828F900B52944 /* UIActivityIndicator+rx.swift */; };
+		EF70D2432158292700B52944 /* Error+APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2422158292700B52944 /* Error+APIError.swift */; };
+		EF70D245215829AC00B52944 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D244215829AB00B52944 /* MusicViewModel.swift */; };
+		EF70D247215829BB00B52944 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D246215829BB00B52944 /* MusicViewController.swift */; };
+		EF70D249215829D500B52944 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D248215829D500B52944 /* MusicService.swift */; };
+		EF70D24D21582EC800B52944 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D24C21582EC800B52944 /* MediaTableViewCell.swift */; };
+		EF70D24F215835F400B52944 /* MovieTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D24E215835F400B52944 /* MovieTabCoordinator.swift */; };
+		EF70D251215836AF00B52944 /* Observable+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D250215836AF00B52944 /* Observable+ext.swift */; };
+		EF70D253215838B200B52944 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D252215838B200B52944 /* APIService.swift */; };
+		EF70D2552158474500B52944 /* Driver+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2542158474500B52944 /* Driver+ext.swift */; };
+		EF70D2572158494B00B52944 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2562158494B00B52944 /* Feed.swift */; };
+		EF70D25921584DE200B52944 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D25821584DE200B52944 /* Alertable.swift */; };
+		EF70D25B215856B500B52944 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D25A215856B500B52944 /* MovieViewModel.swift */; };
+		EF70D25D215856C000B52944 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D25C215856C000B52944 /* MovieService.swift */; };
+		EF70D25F215856D200B52944 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D25E215856D200B52944 /* MovieViewController.swift */; };
+		EF70D26221585EA900B52944 /* RMFavoriteMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D26121585EA900B52944 /* RMFavoriteMedia.swift */; };
+		EF70D26521585F1D00B52944 /* Realm+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D26421585F1D00B52944 /* Realm+ext.swift */; };
+		EF70D2672158623800B52944 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2662158623800B52944 /* DatabaseService.swift */; };
+		EF70D27021587CFF00B52944 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D26F21587CFF00B52944 /* TableViewCell.swift */; };
+		EF70D275215885BF00B52944 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = EF70D274215885BF00B52944 /* movies.json */; };
+		EF70D277215885D600B52944 /* musics.json in Resources */ = {isa = PBXBuildFile; fileRef = EF70D276215885D600B52944 /* musics.json */; };
+		EF70D2792158862C00B52944 /* MockLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D2782158862C00B52944 /* MockLoader.swift */; };
+		EF70D27D2158866500B52944 /* Media.spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D27C2158866500B52944 /* Media.spec.swift */; };
+		EF70D2812158893200B52944 /* media.json in Resources */ = {isa = PBXBuildFile; fileRef = EF70D2802158893200B52944 /* media.json */; };
+		EF70D28521588A5F00B52944 /* media-null-data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF70D28421588A5F00B52944 /* media-null-data.json */; };
+		EF70D28821588B0B00B52944 /* MusicViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D28721588B0B00B52944 /* MusicViewModelSpec.swift */; };
+		EF70D28A21588F1100B52944 /* MovieViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D28921588F1100B52944 /* MovieViewModelSpec.swift */; };
+		EF70D291215891DD00B52944 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70D290215891DD00B52944 /* String+ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF70D21B21580B0A00B52944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF70D1FE21580B0800B52944 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF70D20521580B0800B52944;
+			remoteInfo = Catalog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1144098E0A98202CD52DBB07 /* Pods-Catalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catalog.debug.xcconfig"; path = "Target Support Files/Pods-Catalog/Pods-Catalog.debug.xcconfig"; sourceTree = "<group>"; };
+		7E436DE1D1250F86D67ED696 /* Pods-CatalogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogTests.debug.xcconfig"; path = "Target Support Files/Pods-CatalogTests/Pods-CatalogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		972B5564463646EDE75FB164 /* Pods-CatalogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogTests.release.xcconfig"; path = "Target Support Files/Pods-CatalogTests/Pods-CatalogTests.release.xcconfig"; sourceTree = "<group>"; };
+		A47393C0377A5790B045EE1E /* Pods-Catalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catalog.release.xcconfig"; path = "Target Support Files/Pods-Catalog/Pods-Catalog.release.xcconfig"; sourceTree = "<group>"; };
+		B7B5BDB2015A38A0AD3F30EC /* Pods_Catalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF70D20621580B0800B52944 /* Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF70D20921580B0800B52944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF70D20E21580B0800B52944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF70D21021580B0A00B52944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF70D21321580B0A00B52944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF70D21521580B0A00B52944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF70D21A21580B0A00B52944 /* CatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF70D22021580B0A00B52944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF70D230215823A800B52944 /* CatalogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogAPI.swift; sourceTree = "<group>"; };
+		EF70D2322158252C00B52944 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		EF70D2382158286500B52944 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		EF70D23A2158288400B52944 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EF70D23C215828C300B52944 /* MusicTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTabCoordinator.swift; sourceTree = "<group>"; };
+		EF70D23E215828D900B52944 /* Storyboard+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+ext.swift"; sourceTree = "<group>"; };
+		EF70D240215828F900B52944 /* UIActivityIndicator+rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicator+rx.swift"; sourceTree = "<group>"; };
+		EF70D2422158292700B52944 /* Error+APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+APIError.swift"; sourceTree = "<group>"; };
+		EF70D244215829AB00B52944 /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		EF70D246215829BB00B52944 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		EF70D248215829D500B52944 /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		EF70D24C21582EC800B52944 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		EF70D24E215835F400B52944 /* MovieTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTabCoordinator.swift; sourceTree = "<group>"; };
+		EF70D250215836AF00B52944 /* Observable+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+ext.swift"; sourceTree = "<group>"; };
+		EF70D252215838B200B52944 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EF70D2542158474500B52944 /* Driver+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver+ext.swift"; sourceTree = "<group>"; };
+		EF70D2562158494B00B52944 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		EF70D25821584DE200B52944 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		EF70D25A215856B500B52944 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		EF70D25C215856C000B52944 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		EF70D25E215856D200B52944 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		EF70D26121585EA900B52944 /* RMFavoriteMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFavoriteMedia.swift; sourceTree = "<group>"; };
+		EF70D26421585F1D00B52944 /* Realm+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+ext.swift"; sourceTree = "<group>"; };
+		EF70D2662158623800B52944 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		EF70D26F21587CFF00B52944 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EF70D274215885BF00B52944 /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		EF70D276215885D600B52944 /* musics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = musics.json; sourceTree = "<group>"; };
+		EF70D2782158862C00B52944 /* MockLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoader.swift; sourceTree = "<group>"; };
+		EF70D27C2158866500B52944 /* Media.spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.spec.swift; sourceTree = "<group>"; };
+		EF70D2802158893200B52944 /* media.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = media.json; sourceTree = "<group>"; };
+		EF70D28421588A5F00B52944 /* media-null-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "media-null-data.json"; sourceTree = "<group>"; };
+		EF70D28721588B0B00B52944 /* MusicViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModelSpec.swift; sourceTree = "<group>"; };
+		EF70D28921588F1100B52944 /* MovieViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelSpec.swift; sourceTree = "<group>"; };
+		EF70D290215891DD00B52944 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		FB295896BFB5FFB104978017 /* Pods_CatalogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatalogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF70D20321580B0800B52944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5E94435711F66D4A03CFD5 /* Pods_Catalog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF70D21721580B0A00B52944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F889BD19E7E44A65EFD7D7 /* Pods_CatalogTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6A4B4ED74CAA04A51AA6532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1144098E0A98202CD52DBB07 /* Pods-Catalog.debug.xcconfig */,
+				A47393C0377A5790B045EE1E /* Pods-Catalog.release.xcconfig */,
+				7E436DE1D1250F86D67ED696 /* Pods-CatalogTests.debug.xcconfig */,
+				972B5564463646EDE75FB164 /* Pods-CatalogTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D60958D17DF88BB6E4C96F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B5BDB2015A38A0AD3F30EC /* Pods_Catalog.framework */,
+				FB295896BFB5FFB104978017 /* Pods_CatalogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF70D1FD21580B0800B52944 = {
+			isa = PBXGroup;
+			children = (
+				EF70D20821580B0800B52944 /* Catalog */,
+				EF70D21D21580B0A00B52944 /* CatalogTests */,
+				EF70D20721580B0800B52944 /* Products */,
+				A6A4B4ED74CAA04A51AA6532 /* Pods */,
+				D60958D17DF88BB6E4C96F20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF70D20721580B0800B52944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D20621580B0800B52944 /* Catalog.app */,
+				EF70D21A21580B0A00B52944 /* CatalogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF70D20821580B0800B52944 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D22D2158238C00B52944 /* Util */,
+				EF70D22C2158238600B52944 /* Coordinator */,
+				EF70D22B2158238200B52944 /* Scene */,
+				EF70D22A2158237D00B52944 /* Network */,
+				EF70D2292158237800B52944 /* Model */,
+				EF70D26321585EB600B52944 /* RealmModel */,
+				EF70D20921580B0800B52944 /* AppDelegate.swift */,
+				EF70D20D21580B0800B52944 /* Main.storyboard */,
+				EF70D21021580B0A00B52944 /* Assets.xcassets */,
+				EF70D21221580B0A00B52944 /* LaunchScreen.storyboard */,
+				EF70D21521580B0A00B52944 /* Info.plist */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		EF70D21D21580B0A00B52944 /* CatalogTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D28621588AF800B52944 /* ViewModel */,
+				EF70D27A2158864500B52944 /* Model */,
+				EF70D22021580B0A00B52944 /* Info.plist */,
+				EF70D2782158862C00B52944 /* MockLoader.swift */,
+			);
+			path = CatalogTests;
+			sourceTree = "<group>";
+		};
+		EF70D2292158237800B52944 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D2322158252C00B52944 /* Media.swift */,
+				EF70D2562158494B00B52944 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF70D22A2158237D00B52944 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D2712158857500B52944 /* StubbedData */,
+				EF70D230215823A800B52944 /* CatalogAPI.swift */,
+				EF70D252215838B200B52944 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF70D22B2158238200B52944 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D24A21582EB100B52944 /* Media */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EF70D22C2158238600B52944 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D2382158286500B52944 /* TabCoordinator.swift */,
+				EF70D23A2158288400B52944 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EF70D22D2158238C00B52944 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D26E21587CF000B52944 /* Classes */,
+				EF70D22F2158239500B52944 /* Protocols */,
+				EF70D22E2158239100B52944 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EF70D22E2158239100B52944 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D23E215828D900B52944 /* Storyboard+ext.swift */,
+				EF70D240215828F900B52944 /* UIActivityIndicator+rx.swift */,
+				EF70D2422158292700B52944 /* Error+APIError.swift */,
+				EF70D250215836AF00B52944 /* Observable+ext.swift */,
+				EF70D2542158474500B52944 /* Driver+ext.swift */,
+				EF70D26421585F1D00B52944 /* Realm+ext.swift */,
+				EF70D290215891DD00B52944 /* String+ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF70D22F2158239500B52944 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D25821584DE200B52944 /* Alertable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EF70D2362158281700B52944 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D24E215835F400B52944 /* MovieTabCoordinator.swift */,
+				EF70D25A215856B500B52944 /* MovieViewModel.swift */,
+				EF70D25E215856D200B52944 /* MovieViewController.swift */,
+				EF70D25C215856C000B52944 /* MovieService.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		EF70D2372158281F00B52944 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D23C215828C300B52944 /* MusicTabCoordinator.swift */,
+				EF70D244215829AB00B52944 /* MusicViewModel.swift */,
+				EF70D246215829BB00B52944 /* MusicViewController.swift */,
+				EF70D248215829D500B52944 /* MusicService.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		EF70D24A21582EB100B52944 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D26021585E6800B52944 /* Database */,
+				EF70D24B21582EB900B52944 /* Cell */,
+				EF70D2372158281F00B52944 /* Music */,
+				EF70D2362158281700B52944 /* Movies */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		EF70D24B21582EB900B52944 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D24C21582EC800B52944 /* MediaTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF70D26021585E6800B52944 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D2662158623800B52944 /* DatabaseService.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		EF70D26321585EB600B52944 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D26121585EA900B52944 /* RMFavoriteMedia.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		EF70D26E21587CF000B52944 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D26F21587CFF00B52944 /* TableViewCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF70D2712158857500B52944 /* StubbedData */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D274215885BF00B52944 /* movies.json */,
+				EF70D276215885D600B52944 /* musics.json */,
+			);
+			path = StubbedData;
+			sourceTree = "<group>";
+		};
+		EF70D27A2158864500B52944 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D27B2158864B00B52944 /* StubbedData */,
+				EF70D27C2158866500B52944 /* Media.spec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF70D27B2158864B00B52944 /* StubbedData */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D2802158893200B52944 /* media.json */,
+				EF70D28421588A5F00B52944 /* media-null-data.json */,
+			);
+			path = StubbedData;
+			sourceTree = "<group>";
+		};
+		EF70D28621588AF800B52944 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF70D28721588B0B00B52944 /* MusicViewModelSpec.swift */,
+				EF70D28921588F1100B52944 /* MovieViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF70D20521580B0800B52944 /* Catalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF70D22321580B0A00B52944 /* Build configuration list for PBXNativeTarget "Catalog" */;
+			buildPhases = (
+				9208D6C7D20FCC1EECDECFA6 /* [CP] Check Pods Manifest.lock */,
+				EF70D20221580B0800B52944 /* Sources */,
+				EF70D20321580B0800B52944 /* Frameworks */,
+				EF70D20421580B0800B52944 /* Resources */,
+				72BD90C9075085A9BCD27F86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Catalog;
+			productName = Catalog;
+			productReference = EF70D20621580B0800B52944 /* Catalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF70D21921580B0A00B52944 /* CatalogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF70D22621580B0A00B52944 /* Build configuration list for PBXNativeTarget "CatalogTests" */;
+			buildPhases = (
+				016DF95D233C4C76CD4DBA8E /* [CP] Check Pods Manifest.lock */,
+				EF70D21621580B0A00B52944 /* Sources */,
+				EF70D21721580B0A00B52944 /* Frameworks */,
+				EF70D21821580B0A00B52944 /* Resources */,
+				9DC436B24603CBFF6748B769 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF70D21C21580B0A00B52944 /* PBXTargetDependency */,
+			);
+			name = CatalogTests;
+			productName = CatalogTests;
+			productReference = EF70D21A21580B0A00B52944 /* CatalogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF70D1FE21580B0800B52944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mayckon Barbosa da Silva";
+				TargetAttributes = {
+					EF70D20521580B0800B52944 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					EF70D21921580B0A00B52944 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EF70D20521580B0800B52944;
+					};
+				};
+			};
+			buildConfigurationList = EF70D20121580B0800B52944 /* Build configuration list for PBXProject "Catalog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF70D1FD21580B0800B52944;
+			productRefGroup = EF70D20721580B0800B52944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF70D20521580B0800B52944 /* Catalog */,
+				EF70D21921580B0A00B52944 /* CatalogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF70D20421580B0800B52944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF70D21421580B0A00B52944 /* LaunchScreen.storyboard in Resources */,
+				EF70D21121580B0A00B52944 /* Assets.xcassets in Resources */,
+				EF70D275215885BF00B52944 /* movies.json in Resources */,
+				EF70D20F21580B0800B52944 /* Main.storyboard in Resources */,
+				EF70D277215885D600B52944 /* musics.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF70D21821580B0A00B52944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF70D2812158893200B52944 /* media.json in Resources */,
+				EF70D28521588A5F00B52944 /* media-null-data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		016DF95D233C4C76CD4DBA8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatalogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72BD90C9075085A9BCD27F86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catalog/Pods-Catalog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Catalog/Pods-Catalog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9208D6C7D20FCC1EECDECFA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Catalog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC436B24603CBFF6748B769 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatalogTests/Pods-CatalogTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatalogTests/Pods-CatalogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF70D20221580B0800B52944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF70D247215829BB00B52944 /* MusicViewController.swift in Sources */,
+				EF70D2432158292700B52944 /* Error+APIError.swift in Sources */,
+				EF70D249215829D500B52944 /* MusicService.swift in Sources */,
+				EF70D26221585EA900B52944 /* RMFavoriteMedia.swift in Sources */,
+				EF70D23B2158288400B52944 /* AppCoordinator.swift in Sources */,
+				EF70D2392158286500B52944 /* TabCoordinator.swift in Sources */,
+				EF70D231215823A800B52944 /* CatalogAPI.swift in Sources */,
+				EF70D26521585F1D00B52944 /* Realm+ext.swift in Sources */,
+				EF70D25D215856C000B52944 /* MovieService.swift in Sources */,
+				EF70D253215838B200B52944 /* APIService.swift in Sources */,
+				EF70D23F215828D900B52944 /* Storyboard+ext.swift in Sources */,
+				EF70D241215828F900B52944 /* UIActivityIndicator+rx.swift in Sources */,
+				EF70D20A21580B0800B52944 /* AppDelegate.swift in Sources */,
+				EF70D27021587CFF00B52944 /* TableViewCell.swift in Sources */,
+				EF70D2672158623800B52944 /* DatabaseService.swift in Sources */,
+				EF70D2332158252C00B52944 /* Media.swift in Sources */,
+				EF70D25B215856B500B52944 /* MovieViewModel.swift in Sources */,
+				EF70D25F215856D200B52944 /* MovieViewController.swift in Sources */,
+				EF70D25921584DE200B52944 /* Alertable.swift in Sources */,
+				EF70D291215891DD00B52944 /* String+ext.swift in Sources */,
+				EF70D2552158474500B52944 /* Driver+ext.swift in Sources */,
+				EF70D251215836AF00B52944 /* Observable+ext.swift in Sources */,
+				EF70D245215829AC00B52944 /* MusicViewModel.swift in Sources */,
+				EF70D24D21582EC800B52944 /* MediaTableViewCell.swift in Sources */,
+				EF70D23D215828C300B52944 /* MusicTabCoordinator.swift in Sources */,
+				EF70D24F215835F400B52944 /* MovieTabCoordinator.swift in Sources */,
+				EF70D2572158494B00B52944 /* Feed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF70D21621580B0A00B52944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF70D28821588B0B00B52944 /* MusicViewModelSpec.swift in Sources */,
+				EF70D28A21588F1100B52944 /* MovieViewModelSpec.swift in Sources */,
+				EF70D27D2158866500B52944 /* Media.spec.swift in Sources */,
+				EF70D2792158862C00B52944 /* MockLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF70D21C21580B0A00B52944 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF70D20521580B0800B52944 /* Catalog */;
+			targetProxy = EF70D21B21580B0A00B52944 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF70D20D21580B0800B52944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF70D20E21580B0800B52944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF70D21221580B0A00B52944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF70D21321580B0A00B52944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF70D22121580B0A00B52944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF70D22221580B0A00B52944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF70D22421580B0A00B52944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1144098E0A98202CD52DBB07 /* Pods-Catalog.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARMU3CM3A3;
+				INFOPLIST_FILE = Catalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twopix.Catalog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF70D22521580B0A00B52944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47393C0377A5790B045EE1E /* Pods-Catalog.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARMU3CM3A3;
+				INFOPLIST_FILE = Catalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twopix.Catalog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF70D22721580B0A00B52944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E436DE1D1250F86D67ED696 /* Pods-CatalogTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARMU3CM3A3;
+				INFOPLIST_FILE = CatalogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twopix.CatalogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Catalog.app/Catalog";
+			};
+			name = Debug;
+		};
+		EF70D22821580B0A00B52944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972B5564463646EDE75FB164 /* Pods-CatalogTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ARMU3CM3A3;
+				INFOPLIST_FILE = CatalogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twopix.CatalogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Catalog.app/Catalog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF70D20121580B0800B52944 /* Build configuration list for PBXProject "Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF70D22121580B0A00B52944 /* Debug */,
+				EF70D22221580B0A00B52944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF70D22321580B0A00B52944 /* Build configuration list for PBXNativeTarget "Catalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF70D22421580B0A00B52944 /* Debug */,
+				EF70D22521580B0A00B52944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF70D22621580B0A00B52944 /* Build configuration list for PBXNativeTarget "CatalogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF70D22721580B0A00B52944 /* Debug */,
+				EF70D22821580B0A00B52944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF70D1FE21580B0800B52944 /* Project object */;
+}
